@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+   <div class="gridContainerPadreContacto">
+  <!-- encabezado de nosotros -->
+	<header>
+		<div>
+       <!-- logo con referencia al home -->
+        <a href="../index.html">
+        <img src="../assets/logo2.png" alt="logo">
+        </a>
+    </div>
+  </header>
+  <!-- fin encabezado sitio -->
+    <!-- barra de navegacion -->
+		<nav>
+			<ul class="flex flex-justify">
+        <li><a href="../index.html">Home</a></li>
+       	<li><a href="nosotros.html">Nosotros</a></li>
+       	<li><a href="menu.html">Menú</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+       	<li><a href="contacto.html">Contacto</a></li>
+       </ul>
+		</nav>
+  <!-- contenido del home -->
+  <main>
+    <div class="titulo">
+      <h2> Contactanos!</h2> 
+    </div>
+    <div class="texto">
+      <p> Dejanos tu mensaje y nos comunicamos contigo a la brevedad!</p> 
+    </div>
+    <!-- formulario de contacto -->
+    <section>
+      <form action="">
+        <label for="nombre">Nombre y Apellido
+          <input type="text" placeholder="Nombre y Apellido" name="nombre" class="formulario">
+        </label><br>
+        <label for="email">Correo Electronico
+          <input type="text" placeholder="nombre@email.com" name="email" class="formulario">
+        </label><br>
+        <label for="telefono">Telefono
+          <input type="password" name="Telefono" placeholder="+598" class="formulario">
+        </label><br>
+        <label for="mensaje">Mensaje
+          <textarea name="Mensaje" id="" cols="30"2rows="10" class="formulario" placeholder="Deja tu mensaje"></textarea><br>
+        </label><br>
+        <!-- botones de enviar y resetear -->
+          <input type="submit" name="Enviar">
+          <input type="reset" name="Limpiar">
+      </form>
+    </section>
+    <!-- fin del formulario de contacto -->
+  </main>
+  <!-- termina el contenido -->
+  <!-- inicio del footer -->
+  <footer class="flex flex-center">
+    <p>© 2021 Silvestre, todos los derechos reservados.</p>
+  <!-- logos de redes -->
+    <div class="redes">
+      <img src="../assets/facebook.png" alt="facebook">
+      <img src="../assets/instagram.png" alt="instagram">
+    </div>
+  </footer>
+  <!-- fin del footer -->
+</div>
+</body>
+</html>

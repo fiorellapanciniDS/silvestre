@@ -1,0 +1,298 @@
+/*FUENTE Y COLOR QUE APLICA A TODA LA WEB*/
+/*familia de fuente de la pagina*/ 
+@font-face {
+	font-family: "nunito";
+	src: url("../assets/fonts/Nunito-Light.ttf");}
+
+/*fondo y fuente de toda la pagina*/ 
+body{
+	background-color: #403d39; /*marron oscuro*/ 
+	font-family: "nunito";
+}
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+/* HOME */
+.gridContainerPadre {
+		display: grid;
+		grid-template-areas: 
+		"logo"
+		"nav"
+		"main"
+		"footer"
+		"redes"; /*no me funciona que quede en una 5ta row*/
+		grid-template-columns: 100%;
+		grid-template-rows: 80px 80px 1fr 50px 50px;
+	}
+
+header {
+	grid-area: logo;
+}
+
+nav{
+	grid-area: nav;
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.redes{
+	grid-area: redes;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-justify{
+	justify-content: flex-end;
+}
+.flex-center{
+	justify-content: center;
+}
+
+a {
+	text-decoration: none; /*sacar subrayado de links*/ 
+	color: #f2ebe2 /*color claro para tipografia*/ 
+}
+
+
+nav ul li {
+	text-decoration: none;
+	padding: 20px 20px 0px 20px;
+	font-size: 16px;
+	list-style-type: none;
+	color: #f2ebe2;
+	position: relative;
+}
+
+/*texto de home*/ 
+main section p{
+	color: #f2ebe2;
+	padding:50px 30px 10px 30px;
+	text-align: center; 
+	}
+
+footer{
+	color: #f2ebe2;
+	font-size: 16px;
+	}
+
+/* UBICACION */
+.gridContainerPadreUbicacion {
+	display:grid;
+	grid-template-areas: 
+	"logo"
+	"nav"
+	"main"
+	"footer"
+	"redes";
+	grid-template-columns: 100%;
+	grid-template-rows: 80px 80px 1fr 50px 50px;
+}
+
+
+header {
+	grid-area: logo;
+}
+
+nav{
+	grid-area: nav;
+}
+
+main{
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.redes{
+	grid-area: redes;
+}
+.flex{
+	display: flex;
+}
+
+.flex-justify{
+	justify-content: flex-end;
+}
+.flex-center{
+	justify-content: center;
+}
+
+a {
+	text-decoration: none; /*sacar subrayado de links*/ 
+	color: #f2ebe2 /*color claro para tipografia*/ 
+}
+
+/*texto del nav*/
+nav ul li {
+	text-decoration: none;
+	padding: 20px 20px 0px 20px;
+	font-size: 16px;
+	list-style-type: none;
+	color: #f2ebe2;
+	position: relative;
+}
+
+main{
+	color: #f2ebe2;
+	text-align: left; 
+	}
+
+}
+/* DESKTOP */
+@media only screen and (min-width: 769px){ /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
+/* HOME */
+.gridContainerPadre{
+	display: grid;
+	grid-template-areas: 
+	"logo nav nav nav nav"
+	"main main main main main"
+	"footer footer footer footer footer"
+	"redes redes redes redes redes";
+	grid-template-rows: 160px 1fr 50px 50px;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+/*encabezado*/ 
+header {
+	grid-area: logo;
+}
+
+nav{
+	grid-area: nav;
+}
+
+main {
+	grid-area: main;
+}
+
+footer{
+	grid-area: footer;
+}
+
+.redes{
+	grid-area: redes;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-justify{
+	justify-content: flex-end;
+}
+.flex-center{
+	justify-content: center;
+}
+
+a {
+	text-decoration: none; /*sacar subrayado de links*/ 
+	color: #f2ebe2 /*color claro para tipografia*/ 
+}
+
+/*texto del nav*/
+nav ul li {
+	text-decoration: none;
+	padding: 20px 20px 0px 20px;
+	font-size: 16px;
+	list-style-type: none;
+	color: #f2ebe2;
+	position: relative;
+}
+
+/*texto de home*/ 
+main section p{
+	color: #f2ebe2;
+	padding:50px 30px 10px 30px;
+	text-align: center; 
+	}
+
+/*texto de derechos*/ 
+footer p{
+	color: #f2ebe2;
+	font-size: 16px;
+	}
+
+
+/* UBICACION */
+.gridContainerPadreUbicacion {
+	display: grid;
+	grid-template-areas: 
+	"logo nav nav nav nav"
+	"main main main main main"
+	"footer footer footer footer footer"
+	"redes redes redes redes redes";
+	grid-template-rows: 160px 1fr 50px 50px;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	}
+
+header {
+	grid-area: logo;
+}
+
+nav{
+	grid-area: nav;
+}
+
+main{
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.redes{
+	grid-area: redes;
+}
+.flex{
+	display: flex;
+}
+
+.flex-justify{
+	justify-content: flex-end;
+}
+.flex-center{
+	justify-content: center;
+}
+
+.flex-start{
+	justify-content: flex-start;
+}
+
+a {
+	text-decoration: none; /*sacar subrayado de links*/ 
+	color: #f2ebe2 /*color claro para tipografia*/ 
+}
+
+/*texto del nav*/
+nav ul li {
+	text-decoration: none;
+	padding: 20px 20px 0px 20px;
+	font-size: 16px;
+	list-style-type: none;
+	color: #f2ebe2;
+	position: relative;
+}
+
+main{
+	color: #f2ebe2;
+	text-align: center;
+	}
+
+.titulo{
+	margin-left: 20px
+}
+
+}
+
+

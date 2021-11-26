@@ -65,10 +65,19 @@ a {
 nav ul li {
 	text-decoration: none;
 	padding: 20px 20px 0px 20px;
-	font-size: 16px;
+	font-size: 14px;
 	list-style-type: none;
 	color: #f2ebe2;
-	position: relative;
+}
+
+/*hover para que el menu se agrande y se mueva en el eje de las y*/
+li{
+	transition: all 1s;
+}
+
+li:hover{
+	font-size: 16px;
+	transform: translateY(-2px);
 }
 
 /*texto de home*/ 
@@ -81,6 +90,7 @@ main section p{
 footer{
 	color: #f2ebe2;
 	font-size: 16px;
+	text-align: center;
 	}
 
 /* UBICACION */
@@ -136,10 +146,21 @@ a {
 nav ul li {
 	text-decoration: none;
 	padding: 20px 20px 0px 20px;
-	font-size: 16px;
+	font-size: 14px;
 	list-style-type: none;
 	color: #f2ebe2;
-	position: relative;
+}
+
+/*hover para que el menu se agrande y se mueva en el eje de las y*/
+li{
+	transition: all 1s;
+
+}
+
+li:hover{
+	font-size: 16px;
+	transform: translateY(-2px);
+
 }
 
 main{
@@ -148,6 +169,13 @@ main{
 	}
 
 }
+
+footer{
+	color: #f2ebe2;
+	font-size: 16px;
+	text-align: center;
+	}
+
 /* DESKTOP */
 @media only screen and (min-width: 769px){ /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
 /* HOME */
@@ -207,6 +235,18 @@ nav ul li {
 	list-style-type: none;
 	color: #f2ebe2;
 	position: relative;
+}
+
+/*hover para que el menu se agrande y se mueva en el eje de las y*/
+li{
+	transition: all 1s;
+
+}
+
+li:hover{
+	font-size: 20px;
+	transform: translateY(-10px);
+
 }
 
 /*texto de home*/ 
@@ -282,6 +322,17 @@ nav ul li {
 	list-style-type: none;
 	color: #f2ebe2;
 	position: relative;
+}
+/*hover para que el menu se agrande y se mueva en el eje de las y*/
+li{
+	transition: all 1s;
+
+}
+
+li:hover{
+	font-size: 20px;
+	transform: translateY(-10px);
+
 }
 
 main{

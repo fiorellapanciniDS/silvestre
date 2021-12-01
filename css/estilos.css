@@ -8,342 +8,72 @@
 body{
 	background-color: #403d39; /*marron oscuro*/ 
 	font-family: "nunito";
+	color: #f2ebe2;
+}
+
+header{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.bg-nav{
+	background-color: #403d39}
+
+.barranav{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.navbar-expand-lg {
+		display: flex;
+	    justify-content: flex-end!important;}
+
+.navbar-nav .nav-link {
+	color: #f2ebe2!important}
+
+form{
+	margin: 10px 20px 10px 20px;
+}
+
+.btn{
+	margin: 20px 6px 0px 6px;
+	/*como llevarlo a la derecha*/
+}
+
+.btn-form{
+    color: #403d39;
+    background-color: #f2ebe9; /*buscar el color mas oscuro*/
+    border-color: #f2ebe2;
+}
+
+footer{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 768px){
 /* HOME */
-.gridContainerPadre {
-		display: grid;
-		grid-template-areas: 
-		"logo"
-		"nav"
-		"main"
-		"footer"
-		"redes"; /*no me funciona que quede en una 5ta row*/
-		grid-template-columns: 100%;
-		grid-template-rows: 80px 80px 1fr 50px 50px;
-	}
-
-header {
-	grid-area: logo;
-}
-
-nav{
-	grid-area: nav;
-}
-
-main {
-	grid-area: main;
-}
-
-footer {
-	grid-area: footer;
-}
-
-.redes{
-	grid-area: redes;
-}
-
-.flex{
-	display: flex;
-}
-
-.flex-justify{
-	justify-content: flex-end;
-}
-.flex-center{
-	justify-content: center;
-}
-
-a {
-	text-decoration: none; /*sacar subrayado de links*/ 
-	color: #f2ebe2 /*color claro para tipografia*/ 
-}
-
-
-nav ul li {
-	text-decoration: none;
-	padding: 20px 20px 0px 20px;
-	font-size: 14px;
-	list-style-type: none;
-	color: #f2ebe2;
-}
-
-/*hover para que el menu se agrande y se mueva en el eje de las y*/
-li{
-	transition: all 1s;
-}
-
-li:hover{
+.intro{
+	margin: 40px 10px 30px 10px;
 	font-size: 16px;
-	transform: translateY(-2px);
-}
-
-/*texto de home*/ 
-main section p{
-	color: #f2ebe2;
-	padding:50px 30px 10px 30px;
-	text-align: center; 
-	}
-
-footer{
-	color: #f2ebe2;
-	font-size: 16px;
-	text-align: center;
-	}
-
-/* UBICACION */
-.gridContainerPadreUbicacion {
-	display:grid;
-	grid-template-areas: 
-	"logo"
-	"nav"
-	"main"
-	"footer"
-	"redes";
-	grid-template-columns: 100%;
-	grid-template-rows: 80px 80px 1fr 50px 50px;
-}
-
-
-header {
-	grid-area: logo;
-}
-
-nav{
-	grid-area: nav;
-}
-
-main{
-	grid-area: main;
-}
-
-footer {
-	grid-area: footer;
-}
-
-.redes{
-	grid-area: redes;
-}
-.flex{
-	display: flex;
-}
-
-.flex-justify{
-	justify-content: flex-end;
-}
-.flex-center{
-	justify-content: center;
-}
-
-a {
-	text-decoration: none; /*sacar subrayado de links*/ 
-	color: #f2ebe2 /*color claro para tipografia*/ 
-}
-
-/*texto del nav*/
-nav ul li {
-	text-decoration: none;
-	padding: 20px 20px 0px 20px;
-	font-size: 14px;
-	list-style-type: none;
-	color: #f2ebe2;
-}
-
-/*hover para que el menu se agrande y se mueva en el eje de las y*/
-li{
-	transition: all 1s;
-
-}
-
-li:hover{
-	font-size: 16px;
-	transform: translateY(-2px);
-
-}
-
-main{
-	color: #f2ebe2;
-	text-align: left; 
-	}
-
 }
 
 footer{
-	color: #f2ebe2;
-	font-size: 16px;
-	text-align: center;
-	}
+	font-size: 12px;
+}
+}
 
 /* DESKTOP */
 @media only screen and (min-width: 769px){ /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
 /* HOME */
-.gridContainerPadre{
-	display: grid;
-	grid-template-areas: 
-	"logo nav nav nav nav"
-	"main main main main main"
-	"footer footer footer footer footer"
-	"redes redes redes redes redes";
-	grid-template-rows: 160px 1fr 50px 50px;
-	grid-template-columns: 20% 20% 20% 20% 20%;
+.intro{
+	margin: 40px 30px 30px 30px;
+	font-size: 18px;
 }
 
-/*encabezado*/ 
-header {
-	grid-area: logo;
+.nav-item{
+padding: 0px 10px 0px 10px;
 }
-
-nav{
-	grid-area: nav;
 }
-
-main {
-	grid-area: main;
-}
-
-footer{
-	grid-area: footer;
-}
-
-.redes{
-	grid-area: redes;
-}
-
-.flex{
-	display: flex;
-}
-
-.flex-justify{
-	justify-content: flex-end;
-}
-.flex-center{
-	justify-content: center;
-}
-
-a {
-	text-decoration: none; /*sacar subrayado de links*/ 
-	color: #f2ebe2 /*color claro para tipografia*/ 
-}
-
-/*texto del nav*/
-nav ul li {
-	text-decoration: none;
-	padding: 20px 20px 0px 20px;
-	font-size: 16px;
-	list-style-type: none;
-	color: #f2ebe2;
-	position: relative;
-}
-
-/*hover para que el menu se agrande y se mueva en el eje de las y*/
-li{
-	transition: all 1s;
-
-}
-
-li:hover{
-	font-size: 20px;
-	transform: translateY(-10px);
-
-}
-
-/*texto de home*/ 
-main section p{
-	color: #f2ebe2;
-	padding:50px 30px 10px 30px;
-	text-align: center; 
-	}
-
-/*texto de derechos*/ 
-footer p{
-	color: #f2ebe2;
-	font-size: 16px;
-	}
-
-
-/* UBICACION */
-.gridContainerPadreUbicacion {
-	display: grid;
-	grid-template-areas: 
-	"logo nav nav nav nav"
-	"main main main main main"
-	"footer footer footer footer footer"
-	"redes redes redes redes redes";
-	grid-template-rows: 160px 1fr 50px 50px;
-	grid-template-columns: 20% 20% 20% 20% 20%;
-	}
-
-header {
-	grid-area: logo;
-}
-
-nav{
-	grid-area: nav;
-}
-
-main{
-	grid-area: main;
-}
-
-footer {
-	grid-area: footer;
-}
-
-.redes{
-	grid-area: redes;
-}
-.flex{
-	display: flex;
-}
-
-.flex-justify{
-	justify-content: flex-end;
-}
-.flex-center{
-	justify-content: center;
-}
-
-.flex-start{
-	justify-content: flex-start;
-}
-
-a {
-	text-decoration: none; /*sacar subrayado de links*/ 
-	color: #f2ebe2 /*color claro para tipografia*/ 
-}
-
-/*texto del nav*/
-nav ul li {
-	text-decoration: none;
-	padding: 20px 20px 0px 20px;
-	font-size: 16px;
-	list-style-type: none;
-	color: #f2ebe2;
-	position: relative;
-}
-/*hover para que el menu se agrande y se mueva en el eje de las y*/
-li{
-	transition: all 1s;
-
-}
-
-li:hover{
-	font-size: 20px;
-	transform: translateY(-10px);
-
-}
-
-main{
-	color: #f2ebe2;
-	text-align: center;
-	}
-
-.titulo{
-	margin-left: 20px
-}
-
-}
-
-

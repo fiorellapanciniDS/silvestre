@@ -88,4 +88,16 @@ padding: 0px 10px 0px 10px;
     text-align: end;
     margin: 0 20px 80px 0;
 }
+
+/*hover para que el menu se agrande y se mueva en el eje de las y*/
+li{
+	transition: all 1s;
+
+}
+
+li:hover{
+	font-size: 20px;
+	transform: translateY(-10px);
+
+}
 }

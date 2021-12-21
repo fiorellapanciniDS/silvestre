@@ -57,7 +57,9 @@
   <!-- termina el encabezado -->
   <!-- comienza el contenido -->
   <main>
-    <form> <!-- formulario de contacto -->
+    <div class="container-fluid" style="margin-top: 100px;">
+      <form class="col-lg-8 col-12" style="margin: auto">
+    <!--<form>  formulario de contacto -->
       <div class="form-group row">
         <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre y Apellido</label>
         <div class="col-sm-10">
@@ -81,11 +83,17 @@
         <div class="col-sm-10">
             <textarea type="mensaje" class="form-control" id="mensaje" rows="5" placeholder="Deja tu mensaje"></textarea>
         </div>
-      <div class="buttom">
-        <button type="submit" class="btn btn-form">Enviar</button>
-        <button type="reset" class="btn btn-form">Limpiar</button>
       </div>
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <div class="buttom">
+              <button type="submit" class="btn btn-form">Enviar</button>
+              <button type="reset" class="btn btn-form">Limpiar</button>
+          </div>
+          </div>
+         </div>
     </form>
+    </div>
   </main>
   <!-- termina el contenido -->
   <!-- inicio del footer -->

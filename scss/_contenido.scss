@@ -21,10 +21,6 @@ body{
 
 }
 
-//.main{
-//	@include estiloFuente(30px, 30px, 20px, 20px, justify, 20px);
-//}
-
 .text{
 	@include estiloFuente(30px, 30px, 20px, 20px, justify, 20px);
 }

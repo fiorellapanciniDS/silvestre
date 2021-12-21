@@ -53,7 +53,7 @@ header {
   margin-bottom: 40px; }
 
 form {
-  margin: 10px 20px 10px 20px; }
+  margin: 60px 20px 10px 20px; }
 
 .btn, .btn-form {
   margin: 20px 6px 0px 6px;
@@ -78,8 +78,7 @@ form {
   /*Contacto*/
   .buttom {
     flex: 1;
-    text-align: end;
-    margin: 0 20px 80px 0; } }
+    text-align: end; } }
 
 .bg-nav {
   background-color: #403d39; }

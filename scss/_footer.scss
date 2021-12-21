@@ -1,0 +1,35 @@
+$styleFont: (
+	menu: 20px,
+	derechos: 18px,
+	derechosmob: 14px,
+	hov: 22px,
+	);
+
+footer{
+	color: $claro;
+	font-size: map-get($styleFont, derechos);
+	margin-top: 60px!important;
+	}
+
+
+	/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	/*Footer*/
+	
+	footer{
+		color: $claro;
+		font-size: map-get($styleFont, derechosmob);
+		margin-top: 30px!important;
+		}	
+	}
+	
+	/* DESKTOP */
+	@media only screen and (min-width: 769px){ /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
+	   /*Footer*/
+	  
+	footer{
+		color: $claro;
+		font-size: map-get($styleFont, derechos);
+		margin-top: 60px!important;
+		}	
+	}

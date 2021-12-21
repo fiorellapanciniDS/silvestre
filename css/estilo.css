@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "nunito";
+  src: url("../assets/fonts/Nunito-Light.ttf"); }
+
+/*fondo y fuente de toda la pagina*/
+body {
+  background-color: #403d39;
+  font-family: "nunito";
+  color: #f2ebe2; }
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-size: 20px; }
+
+.intro {
+  margin: 40px 30px 30px 30px;
+  font-size: 18px; }
+
+.titulo {
+  color: #f2ebe2;
+  font-size: 32px;
+  margin: 50px 20px 10px 20px;
+  text-align: left; }
+
+footer {
+  color: #f2ebe2;
+  font-size: 18px;
+  margin-top: 60px !important; }
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /*Footer*/
+  footer {
+    color: #f2ebe2;
+    font-size: 14px;
+    margin-top: 30px !important; } }
+
+/* DESKTOP */
+@media only screen and (min-width: 769px) {
+  /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
+  /*Footer*/
+  footer {
+    color: #f2ebe2;
+    font-size: 18px;
+    margin-top: 60px !important; } }
+
+header {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+form {
+  margin: 10px 20px 10px 20px; }
+
+.btn, .btn-form {
+  margin: 20px 6px 0px 6px;
+  /*como llevarlo a la derecha*/ }
+
+.btn-form {
+  color: #403d39;
+  background-color: #ccc5b9;
+  border-color: #ccc5b9; }
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /*Contacto*/
+  .buttom {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 60px; } }
+
+/* DESKTOP */
+@media only screen and (min-width: 769px) {
+  /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
+  /*Contacto*/
+  .buttom {
+    flex: 1;
+    text-align: end;
+    margin: 0 20px 80px 0; } }
+
+.bg-nav {
+  background-color: #403d39; }
+
+.barranav {
+  display: flex;
+  justify-content: flex-end; }
+
+.navbar-expand-lg {
+  display: flex;
+  justify-content: flex-end !important; }
+
+.navbar-nav .nav-link {
+  color: #f2ebe2 !important;
+  font-size: 20px;
+  padding: 22px !important; }
+  .navbar-nav .nav-link:hover {
+    color: #f3dfc1;
+    font-size: 22px; }
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .table-bordered {
+    margin-bottom: 40px;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px; } }
+
+/* DESKTOP */
+@media only screen and (min-width: 769px) {
+  .row {
+    flex-wrap: nowrap !important; }
+  .table-bordered {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: 80%; } }

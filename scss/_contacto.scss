@@ -1,0 +1,39 @@
+form{
+	margin: 10px 20px 10px 20px;
+}
+
+.btn{
+	margin: 20px 6px 0px 6px;
+	/*como llevarlo a la derecha*/
+}
+
+.btn-form{
+    @extend .btn;
+    color: $negro;
+    background-color: $beige;
+    border-color: $beige;
+}
+
+
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+/*Contacto*/
+
+.buttom{
+    flex: 1;
+    text-align: center;
+    margin-bottom: 60px;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 769px){ /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
+   /*Contacto*/
+  
+.buttom{
+    flex: 1;
+    text-align: end;
+    margin: 0 20px 80px 0;
+    }
+}

@@ -1,38 +1,41 @@
-
 //familia tipografica
 @font-face {
-	font-family: "nunito";
-	src: url("../assets/fonts/Nunito-Light.ttf");}
-
-/*fondo y fuente de toda la pagina*/ 
-body{
-	background-color: $negro;
-	font-family: "nunito";
-	color: $claro;
+   font-family: "nunito";
+   src: url("../assets/fonts/Nunito-Light.ttf");
 }
 
-@mixin estiloFuente($arriba, $abajo, $izq, $der, $align, $fSize){
-	margin-top: $arriba;
-	margin-bottom: $abajo;
-	margin-left: $izq;
-	margin-right: $der;
-	text-align: $align;
-	font-size: $fSize;
-
+/*fondo y fuente de toda la pagina*/
+body {
+   background-color: $negro;
+   font-family: "nunito";
+   color: $claro;
 }
 
-.text{
-	@include estiloFuente(30px, 30px, 20px, 20px, justify, 20px);
+@mixin estiloFuente($arriba, $abajo, $izq, $der, $align, $fSize) {
+   margin-top: $arriba;
+   margin-bottom: $abajo;
+   margin-left: $izq;
+   margin-right: $der;
+   text-align: $align;
+   font-size: $fSize;
 }
 
-.intro{
-	margin: 40px 30px 30px 30px;
-	font-size: 18px;
+.text {
+   @include estiloFuente(30px, 30px, 20px, 20px, justify, 20px);
 }
 
-.titulo{
-	color: $claro;
-	font-size: 32px;
-	margin:50px 20px 10px 20px;
-	text-align: left; 
-	}
+.textTrab {
+   @include estiloFuente(30px, 30px, 20px, 20px, justify, 16px);
+}
+
+.intro {
+   margin: 40px 30px 30px 30px;
+   font-size: 18px;
+}
+
+.titulo {
+   color: $claro;
+   font-size: 32px;
+   margin: 50px 20px 10px 20px;
+   text-align: left;
+}

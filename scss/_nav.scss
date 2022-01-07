@@ -1,27 +1,29 @@
 $styleFont: (
-	menu: 20px,
-	derechos: 18px,
-	hov: 22px,
-	);
+   menu: 20px,
+   derechos: 18px,
+   hov: 22px,
+);
 
-.bg-nav{
-	background-color:$negro}
-	
-.barranav{
-	display: flex;
-	justify-content: flex-end;
-	}	
-	
-.navbar-expand-lg {
-	display: flex;
-	justify-content: flex-end!important;}
-	
-.navbar-nav .nav-link {
-	color: $claro!important;
-	font-size: map-get($styleFont, menu);
-	padding: 22px!important;
-	&:hover {
-		color: $amarillo;
-		font-size: map-get($styleFont, hov);
+.bg-nav {
+   background-color: $negro;
 }
+
+.barranav {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.navbar-expand-lg {
+   display: flex;
+   justify-content: flex-end !important;
+}
+
+.navbar-nav .nav-link {
+   color: $claro !important;
+   font-size: map-get($styleFont, menu);
+   padding: 22px !important;
+   &:hover {
+      color: $amarillo;
+      font-size: map-get($styleFont, hov);
+   }
 }

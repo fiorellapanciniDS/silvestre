@@ -16,6 +16,14 @@ body {
   text-align: justify;
   font-size: 20px; }
 
+.textTrab {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  font-size: 16px; }
+
 .intro {
   margin: 40px 30px 30px 30px;
   font-size: 18px; }
@@ -116,3 +124,95 @@ form {
     margin-right: 20px;
     margin-bottom: 40px;
     width: 80%; } }
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* UBICACION */
+  .gridContainer {
+    display: grid;
+    grid-template-areas: "logo" "nav" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 80px 1fr 100px; }
+    .gridContainer header {
+      grid-area: logo; }
+    .gridContainer nav {
+      grid-area: nav; }
+    .gridContainer main {
+      grid-area: main; }
+    .gridContainer footer {
+      grid-area: footer; }
+    .gridContainer .flex {
+      display: flex; }
+    .gridContainer ul {
+      justify-content: center;
+      padding-inline-start: 0px !important; }
+    .gridContainer .flex-center {
+      justify-content: center; }
+    .gridContainer a {
+      text-decoration: none;
+      /*sacar subrayado de links*/
+      color: #f2ebe2;
+      /*color claro para tipografia*/ }
+    .gridContainer nav ul li {
+      text-decoration: none;
+      padding: 12px;
+      font-size: 14px;
+      list-style-type: none;
+      color: #f2ebe2;
+      position: relative; }
+    .gridContainer h2 {
+      font-weight: normal !important; }
+    .gridContainer .titulo {
+      color: #f2ebe2;
+      font-size: 22px;
+      margin: 50px 20px 10px 20px;
+      text-align: center; } }
+
+/* DESKTOP */
+@media only screen and (min-width: 769px) {
+  /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
+  /* UBICACION */
+  .gridContainer {
+    display: grid;
+    grid-template-areas: "logo nav nav nav nav" "main main main main main" "footer footer footer footer footer";
+    grid-template-rows: 160px 1fr 100px;
+    grid-template-columns: 20% 20% 20% 20% 20%; }
+    .gridContainer header {
+      grid-area: logo; }
+    .gridContainer nav {
+      grid-area: nav; }
+    .gridContainer main {
+      grid-area: main; }
+    .gridContainer footer {
+      grid-area: footer; }
+    .gridContainer .flex {
+      display: flex; }
+    .gridContainer ul {
+      justify-content: flex-end; }
+    .gridContainer .flex-center {
+      justify-content: center; }
+    .gridContainer .flex-start {
+      justify-content: flex-start; }
+    .gridContainer nav {
+      margin-top: 40px; }
+    .gridContainer a {
+      text-decoration: none;
+      /*sacar subrayado de links*/
+      color: #f2ebe2;
+      /*color claro para tipografia*/ }
+    .gridContainer nav ul li {
+      text-decoration: none;
+      list-style-type: none;
+      color: #f2ebe2;
+      font-size: 20px;
+      padding: 22px; }
+      .gridContainer nav ul li:hover {
+        color: #f3dfc1;
+        font-size: 22px; }
+    .gridContainer h2 {
+      font-weight: normal !important; }
+    .gridContainer .titulo {
+      color: #f2ebe2;
+      font-size: 32px;
+      margin: 50px 20px 10px 20px;
+      text-align: left; } }

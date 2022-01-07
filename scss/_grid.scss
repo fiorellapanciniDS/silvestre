@@ -1,0 +1,147 @@
+$styleFont: (
+   menu: 20px,
+   derechos: 18px,
+   hov: 22px,
+);
+
+/* MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+   /* UBICACION */
+   .gridContainer {
+      display: grid;
+      grid-template-areas:
+         "logo"
+         "nav"
+         "main"
+         "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 160px 80px 1fr 100px;
+
+      header {
+         grid-area: logo;
+      }
+
+      nav {
+         grid-area: nav;
+      }
+
+      main {
+         grid-area: main;
+      }
+
+      footer {
+         grid-area: footer;
+      }
+
+      .flex {
+         display: flex;
+      }
+
+      ul {
+         justify-content: center;
+         padding-inline-start: 0px !important;
+      }
+      .flex-center {
+         justify-content: center;
+      }
+
+      a {
+         text-decoration: none; /*sacar subrayado de links*/
+         color: #f2ebe2; /*color claro para tipografia*/
+      }
+
+      nav ul li {
+         text-decoration: none;
+         padding: 12px;
+         font-size: 14px;
+         list-style-type: none;
+         color: #f2ebe2;
+         position: relative;
+      }
+
+      h2 {
+         font-weight: normal !important;
+      }
+      .titulo {
+         color: #f2ebe2;
+         font-size: 22px;
+         margin: 50px 20px 10px 20px;
+         text-align: center;
+      }
+   }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 769px) {
+   /* como no tengo vista tablet le pongo el min de 769 en vez de 1024 */
+   /* UBICACION */
+   .gridContainer {
+      display: grid;
+      grid-template-areas:
+         "logo nav nav nav nav"
+         "main main main main main"
+         "footer footer footer footer footer";
+      grid-template-rows: 160px 1fr 100px;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+
+      header {
+         grid-area: logo;
+      }
+
+      nav {
+         grid-area: nav;
+      }
+
+      main {
+         grid-area: main;
+      }
+
+      footer {
+         grid-area: footer;
+      }
+
+      .flex {
+         display: flex;
+      }
+
+      ul {
+         justify-content: flex-end;
+      }
+      .flex-center {
+         justify-content: center;
+      }
+
+      .flex-start {
+         justify-content: flex-start;
+      }
+
+      nav {
+         margin-top: 40px;
+      }
+      a {
+         text-decoration: none; /*sacar subrayado de links*/
+         color: #f2ebe2; /*color claro para tipografia*/
+      }
+
+      nav ul li {
+         text-decoration: none;
+         list-style-type: none;
+         color: $claro;
+         font-size: map-get($styleFont, menu);
+         padding: 22px;
+         &:hover {
+            color: $amarillo;
+            font-size: map-get($styleFont, hov);
+         }
+      }
+      h2 {
+         font-weight: normal !important;
+      }
+      .titulo {
+         color: #f2ebe2;
+         font-size: 32px;
+         margin: 50px 20px 10px 20px;
+         text-align: left;
+      }
+   }
+}
